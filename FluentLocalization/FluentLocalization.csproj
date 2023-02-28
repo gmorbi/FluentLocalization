@@ -1,0 +1,76 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net7.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <PropertyGroup Condition=" '$(RunConfiguration)' == 'https' " />
+  <PropertyGroup Condition=" '$(RunConfiguration)' == 'http' " />
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.OpenApi" Version="7.0.3" />
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="6.5.0" />
+    <PackageReference Include="FluentValidation" Version="11.5.1" />
+    <PackageReference Include="FluentValidation.AspNetCore" Version="11.2.2" />
+    <PackageReference Include="Microsoft.AspNetCore.Localization" Version="2.2.0" />
+    <PackageReference Include="System.Globalization" Version="4.3.0" />
+    <PackageReference Include="FluentValidation.DependencyInjectionExtensions" Version="11.5.1" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.InMemory" Version="7.0.3" />
+    <PackageReference Include="Microsoft.AspNetCore.Mvc.ViewFeatures" Version="2.2.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="FluentValidation" />
+    <None Remove="FluentValidation.AspNetCore" />
+    <None Remove="Microsoft.AspNetCore.Localization" />
+    <None Remove="System.Globalization" />
+    <None Remove="MediatR" />
+    <None Remove="MediatR.Extensions.Microsoft.DependencyInjection" />
+    <None Remove="FluentValidation.DependencyInjectionExtensions" />
+    <None Remove="Microsoft.EntityFrameworkCore.InMemory" />
+    <None Remove="ErrorOr" />
+    <None Remove="Mapster" />
+    <None Remove="Domain\" />
+    <None Remove="Domain\Models\" />
+    <None Remove="Controllers\" />
+    <None Remove="Controllers\Models\" />
+    <None Remove="Domain\Commands\" />
+    <None Remove="Resources\Resources.pt-BR" />
+    <None Remove="Resources\Resources.en-US" />
+    <None Remove="Resources.en-US" />
+    <None Remove="Resources\" />
+    <None Remove="Microsoft.AspNetCore.Mvc.ViewFeatures" />
+    <None Remove="Resources\Messages.en-US" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Remove="Controllers\WeatherForecastController.cs" />
+    <Compile Remove="Resources\Messages.en-US.Designer.cs" />
+    <Compile Remove="Resources\Messages.pt-BR.Designer.cs" />
+    <Compile Remove="Resources\Resource.en-US.Designer.cs" />
+    <Compile Remove="Resources\Resource.pt-BR.Designer.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Domain\" />
+    <Folder Include="Domain\Models\" />
+    <Folder Include="Controllers\" />
+    <Folder Include="Controllers\Models\" />
+    <Folder Include="Domain\Commands\" />
+    <Folder Include="Resources\" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Remove="Resources\Messages.pt-BR.resx" />
+    <EmbeddedResource Remove="Resources\Messages.resx" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Update="Resources\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Update="Resources\Resources.Designer.cs">
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+</Project>

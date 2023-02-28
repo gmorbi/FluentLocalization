@@ -1,0 +1,46 @@
+﻿<Properties StartupConfiguration="{5773ED84-DED7-4844-8F3E-CE5F9221F989}|https">
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.ItemProperties.FluentLocalization PreferredExecutionTarget="/Applications/Google Chrome.app" />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore>
+      <Breakpoint file="/Users/gmorbi/Projects/FluentLocalization/FluentLocalization/Controllers/WeatherForecastController.cs" relfile="FluentLocalization/Controllers/WeatherForecastController.cs" line="26" column="1" />
+      <Breakpoint file="/Users/gmorbi/Projects/FluentLocalization/FluentLocalization/Controllers/UserController.cs" relfile="FluentLocalization/Controllers/UserController.cs" line="35" column="1" />
+      <Breakpoint file="/Users/gmorbi/Projects/FluentLocalization/FluentLocalization/Domain/Commands/UpdateUserValidator.cs" relfile="FluentLocalization/Domain/Commands/UpdateUserValidator.cs" line="15" column="1" />
+      <Breakpoint file="/Users/gmorbi/Projects/FluentLocalization/FluentLocalization/SharedResources.cs" relfile="FluentLocalization/SharedResources.cs" line="28" column="1" />
+    </BreakpointStore>
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.Workbench ActiveDocument="FluentLocalization/Program.cs">
+    <Files>
+      <File FileName="FluentLocalization/Extensions.cs" Line="16" Column="6" />
+      <File FileName="FluentLocalization/Program.cs" Line="40" Column="18" />
+      <File FileName="FluentLocalization/Domain/Models/User.cs" Line="19" Column="2" />
+      <File FileName="FluentLocalization/Controllers/UserController.cs" Line="35" Column="1" />
+      <File FileName="FluentLocalization/Controllers/Models/UserRequest.cs" Line="1" Column="1" />
+      <File FileName="FluentLocalization/Domain/Commands/UpdateUserValidator.cs" Line="15" Column="1" />
+      <File FileName="FluentLocalization/Resources/Resources.resx" Line="75" Column="47" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="FluentLocalization" expanded="True">
+            <Node name="FluentLocalization" expanded="True">
+              <Node name="Dependencies" expanded="True" />
+              <Node name="Controllers" expanded="True">
+                <Node name="Models" expanded="True" />
+              </Node>
+              <Node name="Domain" expanded="True">
+                <Node name="Commands" expanded="True" />
+                <Node name="Models" expanded="True">
+                  <Node name="User.cs" selected="True" />
+                </Node>
+              </Node>
+              <Node name="Resources" expanded="True" />
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+</Properties>
